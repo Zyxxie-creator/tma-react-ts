@@ -21,8 +21,8 @@ const MainScreen: React.FC<MainScreenProps> = ({ userData, language }) => {
       <div className="background-planet" />
       <div className="background-main" />
       <Dashboard userData={userData} />
-      <Button />
-      <TapBar />
+      <Button language={language} />
+      <TapBar language={language} />
     </div>
   );
 };

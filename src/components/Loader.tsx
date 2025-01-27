@@ -1,4 +1,3 @@
-// src/components/Loader.tsx
 import React, { useEffect, useState } from "react";
 import "../styles/Loader.scss";
 import translations, { Language } from "../translations/translations";
@@ -40,12 +39,11 @@ const Loader: React.FC<LoaderProps> = ({ language }) => {
           <div className="loader__progress" style={{ width: `${progress}%` }} />
         </div>
         <div className="loader__info-block">
-          <p>
-            In the "friends" tab you can see statistics <br />
-            on the number of referrals of 3 lines
-            <br />
-            and additional earnings from them.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: translations[language].friends_tab_info,
+            }}
+          />
         </div>
       </div>
     </div>

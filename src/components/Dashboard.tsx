@@ -4,10 +4,12 @@ import resource2 from "../assets/images/resources/resources-1.png";
 import resource3 from "../assets/images/resources/resources.png";
 import coin from "../assets/images/resources/coin.png";
 import "../styles/Dashboard.scss";
+import translations, { Language } from "../translations/translations";
 
 interface DashboardProps {
   userData: {
     username: string;
+    language_code: Language;
   };
 }
 
@@ -20,7 +22,7 @@ const resourceData = [
 
 const Dashboard: React.FC<DashboardProps> = ({ userData }) => {
   const [timeLeft, setTimeLeft] = useState(776);
-
+  const language = userData.language_code;
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
@@ -51,7 +53,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userData }) => {
           <div className="robot-image" />
           <div className="robot-status">
             <span className="robot-count">3 / 12</span>
-            <span className="robot-label">active robots</span>
+            <span className="robot-label">
+              {translations[language].active_robots}
+            </span>
           </div>
         </div>
       </div>
@@ -73,14 +77,18 @@ const Dashboard: React.FC<DashboardProps> = ({ userData }) => {
           <div className="energy-image" />
           <div className="energy-value">
             <span className="energy-count">1.1k / 3.5k</span>
-            <span className="energy-label">amount of energy</span>
+            <span className="energy-label">
+              {translations[language].amount_of_energy}
+            </span>
           </div>
         </div>
         <div className="time-info">
           <div className="time-image" />
           <div className="time-value">
             <span className="time-count">{formatTime(timeLeft)}</span>
-            <span className="time-label">time until energy ends</span>
+            <span className="time-label">
+              {translations[language].time_until_energy_ends}
+            </span>
           </div>
         </div>
       </div>
