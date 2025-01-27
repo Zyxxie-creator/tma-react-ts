@@ -1,6 +1,5 @@
-# Telegram Mini App
 
-[Telegram](https://t.me/@tmaZyxxieBot)
+[Telegram](https://t.me/tmaZyxxieBot)
 
 ## English
 
