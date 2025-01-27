@@ -1,0 +1,250 @@
+@use "variables";
+
+.dashboard {
+  position: absolute;
+  top: 100px;
+  height: auto;
+  width: 90%;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 12px 16px;
+  border-radius: variables.$dashboard-border-radius;
+  z-index: 3;
+
+  background: variables.$dashboard-bg-color;
+  background-blend-mode: overlay;
+  box-shadow: variables.$shadow-offset variables.$shadow-color inset;
+  backdrop-filter: blur(40px);
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+
+    .profile-image {
+      width: variables.$robot-image-width;
+      height: variables.$robot-image-height;
+      background-image: url("../assets/images/profile.png");
+      background-size: cover;
+      background-position: center;
+      margin-right: 8px;
+    }
+
+    .username {
+      font-family: variables.$font-family;
+      font-size: variables.$font-size-base;
+      font-weight: variables.$font-weight-base;
+      line-height: 20.8px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: variables.$white;
+
+      max-width: calc(100% - #{variables.$robot-image-width} + 16px);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .head-dashboard {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-panel {
+    display: flex;
+    align-items: center;
+
+    .robot-image {
+      width: variables.$robot-image-width;
+      height: variables.$robot-image-height;
+      background-image: url("../assets/images/robot.png");
+      background-size: cover;
+      background-position: center;
+      margin-right: 8px;
+    }
+
+    .robot-status {
+      display: flex;
+      flex-direction: column;
+
+      .robot-count {
+        font-family: variables.$font-family;
+        font-size: 14px;
+        font-weight: variables.$font-weight-base;
+        color: variables.$white;
+        line-height: 18.2px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      .robot-label {
+        font-family: variables.$font-family;
+        font-size: 10px;
+        font-weight: variables.$font-weight-base;
+        color: variables.$white;
+        line-height: 13px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .resources {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+
+    .resources-block {
+      width: 100%;
+      padding-bottom: 9px;
+      border-radius: variables.$dashboard-border-radius;
+      background-blend-mode: overlay;
+      box-shadow: inset variables.$shadow-offset variables.$shadow-color,
+        inset -2px -4px 21px rgba(255, 255, 255, 0);
+      backdrop-filter: blur(40px);
+      display: flex;
+      flex-direction: column;
+
+      .image-container {
+        width: variables.$resource-image-width;
+        height: variables.$resource-image-height;
+        background: #227ce738;
+        border-radius: variables.$dashboard-border-radius;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px auto 4px auto;
+        .resource-image {
+          width: variables.$resource-image-width;
+          height: variables.$resource-image-height;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      .resource-text {
+        font-family: variables.$font-family;
+        font-size: variables.$font-size-base;
+        font-weight: variables.$font-weight-base;
+        line-height: 18.2px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: variables.$white;
+      }
+    }
+  }
+
+  .meta-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    .energy-info {
+      display: flex;
+      align-items: center;
+
+      .energy-image {
+        width: 36px;
+        height: 36px;
+        background-image: url("../assets/images/energy.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .energy-value {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6px;
+        align-items: flex-start;
+
+        .energy-count {
+          font-family: variables.$font-family;
+          font-size: 16px;
+          font-weight: 600;
+          color: variables.$white;
+          line-height: 20px;
+          text-align: center;
+        }
+
+        .energy-label {
+          font-family: variables.$font-family;
+          font-size: 10px;
+          font-weight: variables.$font-weight-base;
+          color: variables.$white;
+          line-height: 13px;
+          text-align: center;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .time-info {
+      display: flex;
+      align-items: center;
+
+      .time-image {
+        width: 36px;
+        height: 36px;
+        background-image: url("../assets/images/time.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .time-value {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6px;
+        align-items: flex-start;
+
+        .time-count {
+          font-family: variables.$font-family;
+          font-size: 16px;
+          font-weight: 600;
+          color: variables.$white;
+          line-height: 20px;
+          text-align: center;
+        }
+
+        .time-label {
+          font-family: variables.$font-family;
+          font-size: 10px;
+          font-weight: variables.$font-weight-base;
+          color: variables.$white;
+          line-height: 13px;
+          text-align: center;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  .progress-bar {
+    margin-top: 12px;
+    width: 100%;
+    height: variables.$progress-bar-height;
+    border-radius: variables.$dashboard-border-radius;
+    background-blend-mode: overlay;
+    box-shadow: 0px 1px 3px 0px #ffffff38 inset;
+    backdrop-filter: blur(40px);
+    position: relative;
+
+    .filled-part {
+      height: 100%;
+      border-radius: variables.$dashboard-border-radius;
+      background: linear-gradient(
+        90deg,
+        #000aff 0%,
+        #3cf8ae 54.82%,
+        #fead17 100%
+      );
+      backdrop-filter: blur(12px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

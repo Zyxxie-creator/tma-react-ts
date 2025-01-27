@@ -1,0 +1,46 @@
+@use "variables";
+
+.button {
+  position: absolute;
+  margin: auto;
+  width: 285px;
+  height: 58px;
+  bottom: 20%;
+  background-image: url("../assets/images/button-main-screen-4х.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 1;
+
+  box-shadow: 0px 4px 20px variables.$shadow-color;
+
+  .button-in {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-text {
+    font-family: variables.$font-family;
+    font-size: 16px;
+    line-height: 20px;
+    color: variables.$white;
+    text-align: center;
+  }
+
+  .button-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/images/energy.png");
+    background-size: cover;
+    background-position: center;
+    margin-left: 8px;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
