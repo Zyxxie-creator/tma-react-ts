@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import App from "./components/App";
-import store from "./store/store";
 import { retrieveLaunchParams } from "@telegram-apps/sdk";
 import "./styles/App.scss";
 
@@ -53,8 +52,6 @@ document.addEventListener("touchmove", preventDefaultBehavior, {
   const userData = await initializeTelegramSDK();
 
   root.render(
-    <Provider store={store}>
       <App userData={userData} />
-    </Provider>
   );
 })();
