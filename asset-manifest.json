@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Zyxxie-creator/tma-react-ts/static/css/main.3b4fef44.css",
-    "main.js": "/Zyxxie-creator/tma-react-ts/static/js/main.7dcaacc3.js",
-    "static/media/bg-main.png": "/Zyxxie-creator/tma-react-ts/static/media/bg-main.e39ec1f41c398e875b58.png",
-    "static/media/bg-loader.png": "/Zyxxie-creator/tma-react-ts/static/media/bg-loader.a952b7416969ecf87dc4.png",
-    "static/media/profile.png": "/Zyxxie-creator/tma-react-ts/static/media/profile.aef7b6ccf9e9a4642f54.png",
-    "static/media/coin.png": "/Zyxxie-creator/tma-react-ts/static/media/coin.c28c2ade4e4df790d87a.png",
-    "static/media/sky.png": "/Zyxxie-creator/tma-react-ts/static/media/sky.3eb3ad88854bfc154045.png",
-    "static/media/resources-2.png": "/Zyxxie-creator/tma-react-ts/static/media/resources-2.4dbe74a2bf60e2a070d7.png",
-    "static/media/resources-1.png": "/Zyxxie-creator/tma-react-ts/static/media/resources-1.2be453ebca6ccf21ecf0.png",
-    "static/media/resources.png": "/Zyxxie-creator/tma-react-ts/static/media/resources.135b5e715483e68d0687.png",
-    "static/media/bg-tap-bar.png": "/Zyxxie-creator/tma-react-ts/static/media/bg-tap-bar.bf18fb655f7a40976bd6.png",
-    "index.html": "/Zyxxie-creator/tma-react-ts/index.html",
-    "main.3b4fef44.css.map": "/Zyxxie-creator/tma-react-ts/static/css/main.3b4fef44.css.map",
-    "main.7dcaacc3.js.map": "/Zyxxie-creator/tma-react-ts/static/js/main.7dcaacc3.js.map"
+    "main.css": "/tma-react-ts/static/css/main.26e4a09a.css",
+    "main.js": "/tma-react-ts/static/js/main.5f7ddb01.js",
+    "static/media/bg-main.png": "/tma-react-ts/static/media/bg-main.e39ec1f41c398e875b58.png",
+    "static/media/bg-loader.png": "/tma-react-ts/static/media/bg-loader.a952b7416969ecf87dc4.png",
+    "static/media/profile.png": "/tma-react-ts/static/media/profile.aef7b6ccf9e9a4642f54.png",
+    "static/media/coin.png": "/tma-react-ts/static/media/coin.c28c2ade4e4df790d87a.png",
+    "static/media/sky.png": "/tma-react-ts/static/media/sky.3eb3ad88854bfc154045.png",
+    "static/media/resources-2.png": "/tma-react-ts/static/media/resources-2.4dbe74a2bf60e2a070d7.png",
+    "static/media/resources-1.png": "/tma-react-ts/static/media/resources-1.2be453ebca6ccf21ecf0.png",
+    "static/media/resources.png": "/tma-react-ts/static/media/resources.135b5e715483e68d0687.png",
+    "static/media/bg-tap-bar.png": "/tma-react-ts/static/media/bg-tap-bar.bf18fb655f7a40976bd6.png",
+    "index.html": "/tma-react-ts/index.html",
+    "main.26e4a09a.css.map": "/tma-react-ts/static/css/main.26e4a09a.css.map",
+    "main.5f7ddb01.js.map": "/tma-react-ts/static/js/main.5f7ddb01.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4fef44.css",
-    "static/js/main.7dcaacc3.js"
+    "static/css/main.26e4a09a.css",
+    "static/js/main.5f7ddb01.js"
   ]
 }
