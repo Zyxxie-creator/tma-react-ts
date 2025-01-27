@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tma-react-ts/static/css/main.26e4a09a.css",
-    "main.js": "/tma-react-ts/static/js/main.5f7ddb01.js",
+    "main.js": "/tma-react-ts/static/js/main.be4d52bb.js",
     "static/media/bg-main.png": "/tma-react-ts/static/media/bg-main.e39ec1f41c398e875b58.png",
     "static/media/bg-loader.png": "/tma-react-ts/static/media/bg-loader.a952b7416969ecf87dc4.png",
     "static/media/profile.png": "/tma-react-ts/static/media/profile.aef7b6ccf9e9a4642f54.png",
@@ -13,10 +13,10 @@
     "static/media/bg-tap-bar.png": "/tma-react-ts/static/media/bg-tap-bar.bf18fb655f7a40976bd6.png",
     "index.html": "/tma-react-ts/index.html",
     "main.26e4a09a.css.map": "/tma-react-ts/static/css/main.26e4a09a.css.map",
-    "main.5f7ddb01.js.map": "/tma-react-ts/static/js/main.5f7ddb01.js.map"
+    "main.be4d52bb.js.map": "/tma-react-ts/static/js/main.be4d52bb.js.map"
   },
   "entrypoints": [
     "static/css/main.26e4a09a.css",
-    "static/js/main.5f7ddb01.js"
+    "static/js/main.be4d52bb.js"
   ]
 }
