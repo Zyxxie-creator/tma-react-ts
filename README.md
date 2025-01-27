@@ -1,6 +1,6 @@
 # Telegram Mini App
 
-[Ссылка на приложение в Telegram](https://t.me/ваш_бот)
+[Telegram](https://t.me/@tmaZyxxieBot)
 
 ## English
 
